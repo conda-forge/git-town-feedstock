@@ -1,5 +1,5 @@
 {% set name = "git-town" %}
-{% set version = "14.2.2" %}
+{% set version = "16.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/git-town/git-town/archive/v{{ version }}.tar.gz
-  sha256: 82ad26267f126b76fd212cba82faacce9b1018d830c082927d83babd6da01dec
+  sha256: ad5fc7b88ca053dc9c515c7a57cd0fa7afca879fa90960d4a885f7037ca7bde1
 
 build:
   number: 0
@@ -24,7 +24,7 @@ test:
 about:
   home: https://github.com/git-town/git-town
   license: MIT
-  license_file: 
+  license_file:
     - LICENSE
     - license-files/
   summary: High-level command-line interface for Git
