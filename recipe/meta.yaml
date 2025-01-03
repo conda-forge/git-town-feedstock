@@ -1,5 +1,5 @@
 {% set name = "git-town" %}
-{% set version = "17.1.1" %}
+{% set version = "17.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/git-town/git-town/archive/v{{ version }}.tar.gz
-  sha256: 26b0f1357b6bc4dc5c53b70c9634895c181f89b3529c62eea1346e247ee74003
+  sha256: f547aba92fe464ac0a724def6554c774571a12654234a692ff699c63d6c23620
 
 build:
   number: 0
