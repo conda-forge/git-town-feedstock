@@ -2,7 +2,7 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
 
-go build -trimpath -buildmode=pie -o=${PREFIX}/bin/${PKG_NAME} -ldflags="-s -w"
+go build -o=${PREFIX}/bin/${PKG_NAME} -ldflags="-s -w"
 go-licenses save . --save_path=license-files
 
 if [[ ${build_platform} == ${target_platform} ]]; then

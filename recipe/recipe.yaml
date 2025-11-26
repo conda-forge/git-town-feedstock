@@ -1,0 +1,37 @@
+schema_version: 1
+
+context:
+  version: 22.2.0
+
+package:
+  name: git-town
+  version: ${{ version }}
+
+source:
+  url: https://github.com/git-town/git-town/archive/v${{ version }}.tar.gz
+  sha256: 93d9b599d14817eda971703aef3c7df409b051611ceda014ce175fbe42bf1d69
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - ${{ compiler('go-nocgo') }}
+    - go-licenses
+
+tests:
+  - script:
+      - git-town --help
+
+about:
+  license: MIT
+  license_file:
+    - LICENSE
+    - license-files/
+  summary: High-level command-line interface for Git
+  homepage: https://github.com/git-town/git-town
+  repository: https://github.com/git-town/git-town
+
+extra:
+  recipe-maintainers:
+    - danielnachun
