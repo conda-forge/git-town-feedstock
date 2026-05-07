@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "22.7.1"
+  version: "23.0.0"
 
 package:
   name: git-town
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/git-town/git-town/archive/v${{ version }}.tar.gz
-  sha256: 1d7f136d5b932593281614f7a5ae2fbb8cf219233efe43022a9f93241c926478
+  sha256: 14c04f9ed0416797627dcb51fdb123a664bbf54e6c8066d383b4fb45cadabd9d
 
 build:
   number: 0
